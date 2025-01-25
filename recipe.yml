@@ -1,0 +1,40 @@
+name: Varbase AI Agents
+description: Provides an AI-powered chatbot for streamlined administration and allows managing multiple agents with distinct functionalities.
+type: Varbase AI
+install:
+  - key
+  - ai
+  - ai_assistant_api
+  - ai_chatbot
+  - ai_agents
+config:
+  import:
+    ai: '*'
+    ai_chatbot: '*'
+    ai_agents: '*'
+  actions:
+    block.block.varbase_ai_chatbot:
+      createIfNotExists:
+        theme: gin
+        region: content
+        default_region: content
+        plugin: ai_chatbot_block
+        provider: null
+        settings:
+          id: varbase_ai_chatbot
+          label: 'Varbase Agent'
+          label_display: '0'
+          provider: ai_chatbot
+          ai_assistant: drupal_agent_assistant
+          bot_name: 'Varbase Agent'
+          bot_image: /profiles/contrib/varbase/logo.png
+          use_username: 1
+          default_username: User
+          use_avatar: 1
+          default_avatar: /profiles/contrib/varbase/images/favicon.ico
+          first_message: 'Hi! How can I assist you?'
+          stream: 0
+          toggle_state: remember
+          show_structured_results: 1
+          output_type: markdown
+        visibility: {  }
