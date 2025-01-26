@@ -9,7 +9,6 @@ install:
   - ai_agents
 config:
   import:
-    ai: '*'
     ai_chatbot: '*'
     ai_agents: '*'
   actions:
