@@ -1,5 +1,5 @@
 {
-  "name": "drupal/varbase_ai_default",
+  "name": "drupal/varbase_ai_agents",
   "description": "Provides an AI-powered chatbot for streamlined administration and allows managing multiple agents with distinct functionalities.",
   "keywords": ["recipe", "Varbase recipes", "varbase recipe", "Drupal recipes", "drupal recipe", "setup AI", "AI Agents", "AI Chatbot"],
   "type": "drupal-recipe",
@@ -13,7 +13,6 @@
   ],
   "require": {
     "drupal/core": "~10 || ~11",
-    "vardot/varbase-patches": "*",
     "drupal/ai_agents": "~1"
   }
 }
