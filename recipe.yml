@@ -12,7 +12,7 @@ config:
     ai_chatbot: '*'
     ai_agents: '*'
   actions:
-    block.block.varbase_ai_chatbot:
+    block.block.ai_chatbot:
       createIfNotExists:
         theme: gin
         region: content
@@ -20,12 +20,12 @@ config:
         plugin: ai_chatbot_block
         provider: null
         settings:
-          id: varbase_ai_chatbot
-          label: 'Varbase Agent'
+          id: ai_chatbot
+          label: 'AI Agent'
           label_display: '0'
           provider: ai_chatbot
           ai_assistant: drupal_agent_assistant
-          bot_name: 'Varbase Agent'
+          bot_name: 'AI Agent'
           bot_image: /profiles/contrib/varbase/logo.png
           use_username: 1
           default_username: User

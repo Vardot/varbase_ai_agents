@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: drupal_agent_assistant
-label: 'Varbase Agent Assistant'
+id: ai_agent_assistant
+label: 'AI Agent Assistant'
 description: 'An assistant that can take actions on your website.'
 allow_history: session_one_thread
 history_context_length: '5'
