@@ -14,17 +14,26 @@ config:
   actions:
     block.block.ai_chatbot:
       createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - ai_chatbot
+            - block_class
+          theme:
+            - gin
+        id: ai_chatbot
         theme: gin
         region: content
-        default_region: content
-        plugin: ai_chatbot_block
+        weight: 0
         provider: null
+        plugin: ai_chatbot_block
         settings:
           id: ai_chatbot
           label: 'AI Agent'
           label_display: '0'
           provider: ai_chatbot
-          ai_assistant: drupal_agent_assistant
+          ai_assistant: ai_agent_assistant
           bot_name: 'AI Agent'
           bot_image: /profiles/contrib/varbase/logo.png
           use_username: 1
@@ -34,6 +43,6 @@ config:
           first_message: 'Hi! How can I assist you?'
           stream: 0
           toggle_state: remember
-          show_structured_results: 1
           output_type: markdown
+          show_structured_results: true
         visibility: {  }
