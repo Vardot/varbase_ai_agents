@@ -27,9 +27,9 @@ config:
         region: content
         weight: 0
         provider: null
-        plugin: ai_chatbot_block
+        plugin: ai_deepchat_block
         settings:
-          id: ai_chatbot
+          id: ai_deepchat_block
           label: 'AI Agent'
           label_display: '0'
           provider: ai_chatbot
@@ -39,10 +39,15 @@ config:
           use_username: 1
           default_username: User
           use_avatar: 1
-          default_avatar: /profiles/contrib/varbase/images/favicon.ico
-          first_message: 'Hi! How can I assist you?'
-          stream: 0
+          default_avatar: ''
+          first_message: 'Hello! How can I help you today?'
+          stream: 1
           toggle_state: remember
-          output_type: markdown
-          show_structured_results: true
+          width: 400px
+          height: 500px
+          placement: bottom-right
+          show_structured_results: false
+          show_copy_icon: true
+          collapse_minimal: false
+          style_file: bard.yml
         visibility: {  }
