@@ -11,6 +11,7 @@ config:
   import:
     ai_chatbot: '*'
     ai_agents: '*'
+    ai_assistant_api: '*'
   actions:
     block.block.ai_chatbot:
       createIfNotExists:
@@ -50,4 +51,8 @@ config:
           show_copy_icon: true
           collapse_minimal: false
           style_file: bard.yml
-        visibility: {  }
+        visibility:
+          request_path:
+            id: request_path
+            pages: /admin/dashboard
+            negate: false

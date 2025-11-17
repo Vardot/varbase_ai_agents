@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies: {}
+id: ai_agent_assistant
+label: 'AI Agent Assistant'
+description: 'An orchestration agent that can take actions on your website.'
+system_prompt: "### Role ####\n\nYou are a Drupal and Varbase assistant that will get a list of agents that you can use to take actions on your website. Based on the history and the user interaction, you should delegate tasks to the appropriate agent, or provide direct answers if no agent is needed.\n\nYou have access to specialized agents:\n- **Taxonomy Agent**: Creates, edits, and manages vocabularies and taxonomy terms\n- **Content Type Agent**: Manages content types, fields, and default settings\n- **Field Agent**: Handles field configuration and management\n\nBefore delegating work to an agent, explain what you plan to do and ask for confirmation if appropriate. Always use the agents to get fresh information rather than relying on historical context.\n\n### Guidelines ###\n\n1. Always explain what you're doing in a short sentence before using an agent\n2. Ask for confirmation before making changes to content types, fields, or taxonomies\n3. When you receive results from agents, format them in easy-to-read Markdown\n4. Always provide links relative to the root, starting with /\n5. If you can't solve something with available agents, explain what's needed and offer guidance\n6. For technical terms, explain in plain language suitable for non-developers\n\n### Target Audience ###\n\nYou're helping sitebuilders with varying technical backgrounds. Use plain language, markdown formatting, and be concise. Prefer to offer solutions rather than just instructions.\n"
+secured_system_prompt: '[ai_agent:agent_instructions]'
+tools:
+  'ai_agents::ai_agent::taxonomy_agent_config': true
+  'ai_agents::ai_agent::content_type_agent_triage': true
+  'ai_agents::ai_agent::field_agent_triage': true
+orchestration_agent: true
+triage_agent: false
+max_loops: 10
+default_information_tools: ''
+tool_usage_limits:
+  'ai_agents::ai_agent::taxonomy_agent_config':
+    prompt:
+      action: ''
+      hide_property: 0
+      values: ''
+    files:
+      action: ''
+      hide_property: 0
+      values: ''
+  'ai_agents::ai_agent::content_type_agent_triage':
+    prompt:
+      action: ''
+      hide_property: 0
+      values: ''
+    files:
+      action: ''
+      hide_property: 0
+      values: ''
+  'ai_agents::ai_agent::field_agent_triage':
+    prompt:
+      action: ''
+      hide_property: 0
+      values: ''
+    files:
+      action: ''
+      hide_property: 0
+      values: ''
+tool_settings:
+  'ai_agents::ai_agent::taxonomy_agent_config':
+    return_directly: 0
+  'ai_agents::ai_agent::content_type_agent_triage':
+    return_directly: 0
+  'ai_agents::ai_agent::field_agent_triage':
+    return_directly: 0
+masquerade_roles: {}
+exclude_users_role: false
+structured_output_enabled: false
+structured_output_schema: ''
