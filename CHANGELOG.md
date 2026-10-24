@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-10-24
+### Changed
+- Update logo.png to the new Varbase logo ([#3632505](https://www.drupal.org/i/3632505)).
+
 ## [1.0.5] - 2026-10-11
 ### Changed
 - Add the default `.gitlab` and `.github` issue and merge request templates. See [#3614565](https://www.drupal.org/i/3614565).
@@ -36,7 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Agents recipe: installs AI, AI Assistant API, AI Chatbot and AI Agents, and places an AI chatbot block for an agent assistant in the Gin admin theme. See [#3502286](https://www.drupal.org/i/3502286).
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.5...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.6...1.0.x
+[1.0.6]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.5...1.0.6
 [1.0.5]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.4...1.0.5
 [1.0.4]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.3...1.0.4
 [1.0.3]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.2...1.0.3
