@@ -2,6 +2,7 @@
 
 Guidance for AI coding agents working on the Varbase AI Agents recipe.
 
+- **Documentation** lives on the [Varbase docs site](https://docs.varbase.vardot.com/developers/understanding-varbase/varbase-ai-recipes/varbase-ai-agents). Keep `README.md` short and link there; add no `docs/` folder.
 - Read `CHANGELOG.md` and the merge request and issue comment history first.
 - Add an entry under `## [Unreleased]` in `CHANGELOG.md` for every change.
 - Commit and merge request titles use the Drupal commit-type format: `{type}: #{issue-id} Summary`.

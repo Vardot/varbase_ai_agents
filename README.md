@@ -9,11 +9,15 @@ Utilizing the [AI Agents](https://www.drupal.org/project/ai_agents),
 and inspired by the outstanding work from the [Drupal CMS AI](https://www.drupal.org/project/drupal_cms_ai) recipe.
 Optimized for the Varbase standard and flavor.
 
+## Documentation
+
+Read the [Varbase AI Agents documentation](https://docs.varbase.vardot.com/developers/understanding-varbase/varbase-ai-recipes/varbase-ai-agents) on the Varbase docs site.
+
 > Apply the Varbase AI Default recipe, or make sure it has been applied before applying this recipe.
 
 ### Add the Recipe Using Composer
 ```
-composer require drupal/varbase_ai_agents:~1.0.0
+composer require drupal/varbase_ai_agents:~1
 ```
 
 Change directory to `/web` or `/docroot`
