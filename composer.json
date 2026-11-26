@@ -12,7 +12,7 @@
     }
   ],
   "require": {
-    "drupal/core": "~10 || ~11",
+    "drupal/core": "^10.6 || ^11.4 || ^12.0",
     "drupal/ai": "~1.2.0",
     "drupal/ai_agents": "~1.2.0",
     "league/commonmark": "*"
