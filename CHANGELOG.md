@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.9] - 2026-11-27
+### Changed
+- Use caret constraints with ^11.4 || ^12.0 to allow Drupal 11.5 and Drupal 12 in Varbase AI Agents recipe ([#3638914](https://git.drupalcode.org/project/varbase_ai_agents/-/work_items/3638914)).
+
 ## [1.0.8] - 2026-11-23
 ### Changed
 - Change the default PHP version to PHP 8.5 in the GitLab CI ([#3638912](https://www.drupal.org/i/3638912)).
@@ -48,7 +52,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Agents recipe: installs AI, AI Assistant API, AI Chatbot and AI Agents, and places an AI chatbot block for an agent assistant in the Gin admin theme. See [#3502286](https://www.drupal.org/i/3502286).
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.8...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.9...1.0.x
+[1.0.9]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.8...1.0.9
 [1.0.8]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.7...1.0.8
 [1.0.7]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.6...1.0.7
 [1.0.6]: https://git.drupalcode.org/project/varbase_ai_agents/-/compare/1.0.5...1.0.6
